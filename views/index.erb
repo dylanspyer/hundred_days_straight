@@ -1,3 +1,10 @@
+
+  <form method="post" action="" class="goal">
+    <input name="goal_name">
+    <button type="submit">Submit</button>
+  </form>
+
+
 <div class="grid-container">
   <% @grid_cells.each do |cell| %>
     <% if session[:clicked].include?(cell) %>
@@ -11,3 +18,5 @@
     <% end %>
   <% end %>
 </div>
+
+
