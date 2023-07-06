@@ -1,0 +1,13 @@
+<div class="grid-container">
+  <% @grid_cells.each do |cell| %>
+    <% if session[:clicked].include?(cell) %>
+     <div class="grid-cell clicked">
+        <a href="/clicked/<%= cell %>"><%= cell %></a>
+      </div>
+    <% else %>
+      <div class="grid-cell unclicked">
+        <a href="/clicked/<%= cell %>"><%= cell %></a>
+      </div>
+    <% end %>
+  <% end %>
+</div>

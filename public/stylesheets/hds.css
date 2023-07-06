@@ -1,0 +1,37 @@
+h1,
+h2 {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 10px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.grid-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.clicked {
+  background-color: rgb(5, 155, 5);
+}
+
+.unclicked {
+  background-color: #ccc;
+}
+
+a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits the color from the parent element */
+}
+
+a:hover {
+  text-decoration: none; /* Removes underline on hover */
+  color: inherit; /* Inherits the color from the parent element on hover */
+}
